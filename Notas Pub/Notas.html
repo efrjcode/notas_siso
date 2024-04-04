@@ -75,7 +75,7 @@
       const curso = document.getElementById("course").value;
       const sellos = parseInt(document.getElementById("sellos").value);
       const cuestionarios = parseInt(document.getElementById("cuestionarios").value);
-      const autoevaluacion = parseInt(document.getElementById("autoevaluacion").value);
+      const autoevaluacion = parseFloat(document.getElementById("autoevaluacion").value);
 
       let maxSellos;
       switch(curso) {
@@ -89,7 +89,7 @@
           maxSellos = 28;
           break;
         case "1101F":
-          maxSellos = 10;
+          maxSellos = 13;
           break;
         case "1102F":
           maxSellos = 29;
